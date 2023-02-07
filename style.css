@@ -150,42 +150,103 @@ input[type="email"] {
   border: none;
 }
 
-.btn {
+/* #btn {
   background: linear-gradient(135deg, #f8bfbf 0%, #ee8b8b 100%);
   box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
   border-radius: 28px;
-  height: 59px;
+  height: 49px;
   width: 105px;
   position: relative;
   z-index: 3;
-  margin-left: -60px;
-}
+  margin-left: -70px;
+  padding: 19px 45px;
+} */
 
-.btn::after {
+/* #btn::after {
   content: url(./images/icon-arrow.svg);
   position: absolute;
   top: 19px;
   height: 17.67px;
   width: 8.84px;
+} */
+
+.btn {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 5vh;
+  width: 30vw;
 }
 
-.btn:hover {
-  background: linear-gradient(135deg, #fccece 0%, #f79d9d 100%);
-box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
-}
-
-.invalid-feedback {
-  display: none;
+.btn input {
+  padding: 14px 32px;
   width: 100%;
-  margin-top: 0.25rem;
-  font-size: 0.875em;
-  color: #dc3545;
+  border-radius: 20px;
+  border: 1px solid hsl(0, 99%, 47%);
+  color: hsl(0, 93%, 68%);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 1.2px;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  border: 1px solid #ce9898;
 }
 
-.was-validated :invalid ~ .invalid-feedback {
-  display: block;
+.div-btn {
+  position: relative;
 }
 
+#txt {
+  color: #f96464;
+  font-weight: 400;
+  font-size: 13px;
+  position: absolute;
+  bottom: -70px;
+  left: 35px;
+}
+
+#error-img {
+  position: absolute;
+  right: 110px;
+  width: 18px;
+  display: none;
+}
+
+::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #ce9898;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.mob-desktop {
+  display: none;
+}
+
+button {
+  z-index: 51;
+  margin-left: -53px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #f8bfbf 0%, #ee8b8b 100%);
+  box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
+  border-radius: 28px;
+  width: 100px;
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button img {
+  width: 8px;
+}
 
 /*##### for-phone-only ##########*/
 @media (max-width: 599px) {
