@@ -78,18 +78,28 @@ button {
 
 body {
   background: #fafafa;
+  
 }
 
 main {
   width: 100%;
+  height: auto;
   background: #fafafa;
   display: grid;
   grid-template-columns: 1fr 610px;
+  
+}
+.img {
+  width: 610px;
+  height: 100%;
 }
 
 .text {
-  padding: 64.91px 220px 152px 165px;
+  padding: 64.91px 120px 0px 165px;
   background-image: url(./images/bg-pattern-desktop.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .logo {
@@ -130,15 +140,6 @@ form {
   display: flex;
 }
 
-.input-container {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  border: 1px solid #ce9898;
-  border-radius: 28px;
-  mix-blend-mode: normal;
-}
-
 input[type="email"] {
   position: relative;
   mix-blend-mode: normal;
@@ -149,26 +150,6 @@ input[type="email"] {
   outline: none;
   border: none;
 }
-
-/* #btn {
-  background: linear-gradient(135deg, #f8bfbf 0%, #ee8b8b 100%);
-  box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
-  border-radius: 28px;
-  height: 49px;
-  width: 105px;
-  position: relative;
-  z-index: 3;
-  margin-left: -70px;
-  padding: 19px 45px;
-} */
-
-/* #btn::after {
-  content: url(./images/icon-arrow.svg);
-  position: absolute;
-  top: 19px;
-  height: 17.67px;
-  width: 8.84px;
-} */
 
 .btn {
   position: relative;
